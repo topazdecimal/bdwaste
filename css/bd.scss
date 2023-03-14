@@ -1,0 +1,225 @@
+.hero{
+    .column{
+        align-self: center;
+    }
+    img{
+        border-radius: 20px;
+    }
+}
+.btn-color{
+    background: green !important;
+}
+.hero-cta{
+    background: green;
+    text-decoration: none;
+    color: #fff !important;
+    font-size: 1.6em;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+
+    &::after{
+        content: ' →';
+
+    }
+
+    &:hover{
+        background: #242424;
+        color: lightgreen !important;
+
+
+    }
+}
+.side-cta{
+    background: #fff;
+    text-decoration: none;
+    color: green !important;
+    font-size: 1.6em;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+
+    &::after{
+        content: ' →';
+
+    }
+
+    &:hover{
+        background: #242424;
+        color: lightgreen !important;
+
+
+    }
+}
+.hero-title{
+    font-size: 4.6em;
+    font-weight: 600;
+    line-height: 95%;
+
+    span{
+        color: green;
+    }
+}
+.hero-subtitle{
+    font-size: 1.6em;
+    line-height: 120%;
+    margin-top: 30px;
+}
+#about{
+    padding: 100px 0px;
+    background: #fafafa;
+}
+#offtakers{
+    padding: 100px 0px;
+    background: green;
+    .sectional-title{
+        color: lightgreen;
+    } .sectional-subtitle{
+        color: #fff;
+    }
+    .column{
+        align-self: center;
+        img{
+            border-radius: 20px;
+        }
+    }
+
+    .process-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: max-content;
+    grid-gap: 30px;
+    margin-top: 100px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+}
+.process-box{
+    // text-align: center;
+    // background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    
+    img{
+        margin-bottom: 10px;
+        width: 60px;
+    }
+    h2{
+        font-weight: 600;
+        font-size: 1.6em;
+        margin-bottom: 10px;
+        color: green;
+    }
+}
+}
+
+.sectional-title{
+    font-size: 3.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: green;
+}
+.sectional-subtitle{
+    font-size: 1.2em;
+    
+}
+.traction-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: max-content;
+    grid-gap: 30px;
+    margin-top: 100px;
+}
+.traction-box{
+    color: #fff;
+    border-left: 1px solid lightgreen;
+    padding-left: 30px;
+    h2{
+        font-size: 6em;
+        font-weight: 600;
+        margin-bottom: 5px;
+        line-height: 90%;
+    }
+    p{
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-top: 0px;
+        line-height: 100%;
+        color: lightgreen;
+    }
+}
+.process-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: max-content;
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+.process-box{
+    // text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    img{
+        margin-bottom: 20px;
+    }
+    h2{
+        font-weight: 600;
+        font-size: 1.6em;
+        margin-bottom: 10px;
+    }
+}
+
+#partners{
+    padding: 100px 0px;
+    background: #efefef;
+    .partners-wrapper{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: max-content;
+        grid-gap: 20px;
+    }
+    .partner-box{
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        align-self: center;
+        img{
+            height: 80px;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+  
+.process-wrapper, .traction-wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    // grid-gap: 20px;
+}
+.partners-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    // grid-gap: 20px;
+}
+.traction-box{
+    border-left: none;
+    border-bottom: 1px solid lightgreen;
+    padding: 0px 0px 30px 0px;
+}
+.hero-title{
+    font-size: 3em;
+}
+.hero-subtitle{
+    font-size: 1.5em;
+}
+#about, #offtakers, #partners{
+    padding:50px 30px;
+}
+.sectional-title{
+    line-height: 110%;
+}
+
+}
+
